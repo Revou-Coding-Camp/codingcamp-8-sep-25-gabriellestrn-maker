@@ -15,7 +15,7 @@
 
 <body>
     
-   <header class="main-header>
+   <header class="main-header p-[8px]">
     <!-- Logo Website -->
     <div class="logo-icon"></div>
 
@@ -25,14 +25,64 @@
             <li class="home"><a class="border p-(8px) rounded" href="#home">Home</a></li>
             <li class="profile"><a class="border p-(8px) rounded" href="#profile">Our Profile</a></li>
             <li class="portofolio"><a class="border p-(8px) rounded" href="#portofolio">Portofolio</a></li>
-            <li class="contact"><a class="border p-(8px) rounded" href="#message-us">Message Us</a></li>
+            <li class="contact"><a class="border p-(8px) rounded" href="#contact">Message Us</a></li>
         </ul>
     </nav>
    </header>
 
-   <main></main>
+    <hr/>
+   <main>
+    <section id="home" class="welcome-section">
+            <h1>Welcome to Gaby's Portofolio</h1>
+        </section>
 
-   <footer></footer>
+        <section id="profile" class="profile-section">
+            <h2>Our Profile</h2>
+        </section>
+
+        <section id="portofolio" class="portofolio-section">
+            <h2>Portofolio</h2>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="message-text">Message Us</h2>
+
+            <form class="message-form">
+            <div class="name-field">
+            <label for="name" class="name-label">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="name-input">
+            </div>
+
+            <div class="gender-field">
+            <label for="gender" class="gender-label">Gender:</label><br>
+            <select class="gender-field">
+            <option value="man">Man</option>
+            <option value="woman">Woman</option>
+            <option value="other">Prefer not to say</option>
+        </select>
+            </div>
+
+            <div class="email-field">
+            <label for="email" class="email-label">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="email-input">
+            </div>
+
+            <div class="message-field">
+            <label for="message" class="message-label">Message:</label><br>
+            <textarea id="message" name="message" class="message-input"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <p>&copy; 2025 Gabrielle S. All rights reserved.</p>
+       </div>
+   </footer>
 
    <!-- JS External -->
      <script src="js\script.js"></script>

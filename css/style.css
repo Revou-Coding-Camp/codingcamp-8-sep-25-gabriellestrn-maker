@@ -40,4 +40,98 @@ height: 75px;
     padding: 8px;
     border-radius: 4px;
         display: inline-block;
+        flex-direction: column;
+}
+
+.welcome-section {
+    min-height: 100vh;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section {
+    min-height: 100vh;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+.portofolio-section {
+    min-height: 100vh;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section {
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.footer-content {    text-align: center;
+    padding: 110px;
+}
+.message-text{
+    margin: 0.3px;
+}
+.message-form{
+        margin-top: 1rem;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    display: flex
+;
+    flex-direction: column;
+}
+.name-field{
+        margin-bottom: 1rem;
+}
+.name-label{
+        display: block;
+    margin-bottom: 0.5rem;
+}
+.name-input{
+        border: 1px solid;
+    padding: 0.5rem;
+    width: 100%;
+}
+.gender-field{
+    margin-bottom: 1rem;
+}
+.gender-label{
+        display: block;
+    margin-bottom: 0.5rem;
+}
+
+.email-field{
+        margin-bottom: 1rem;
+}
+.email-label{
+        display: block;
+    margin-bottom: 0.5rem;
+}
+.email-input{
+        border: 1px solid;
+    padding: 0.5rem;
+    width: 100%;
+}
+.message-field{
+        margin-bottom: 1rem;
+}
+.message-label{
+        display: block;
+    margin-bottom: 0.5rem;
+}
+.message-input{
+        border: 1px solid;
+    padding: 0.5rem;
+    width: 100%;
 }
