@@ -33,12 +33,35 @@
     <hr/>
    <main>
     <section id="home" class="welcome-section">
-            <h1>Welcome to Gaby's Portofolio</h1>
+            <h1>Hi <span id="welcome-user">User!</span> Welcome to Gaby's Portofolio</h1>
         </section>
 
         <section id="profile" class="profile-section">
-            <h2>Our Profile</h2>
-        </section>
+    <div>
+        <h2 style="text-align:center;">Our Profile</h2>
+        <h3 style="text-align:center; margin-top:16px;">Education</h3>
+        <div class="education-gallery">
+            <div class="edu-item">
+                <a href="https://share.google/dVExLodj0STvEdzbD" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.UpJZXmaeDEmF3dMRUiz9ygHaHa?pid=Api&P=0&h=180" alt="DonBosco Logo" class="edu-img">
+                    <p class="edu-caption">SD Don Bosco III</p>
+                </a>
+            </div>
+            <div class="edu-item">
+                <a href="https://share.google/o2xjp7nCXCVjWunGz" target="_blank">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.UpJZXmaeDEmF3dMRUiz9ygHaHa?pid=Api&P=0&h=180" alt="DonBosco Logo" class="edu-img">
+                    <p class="edu-caption">SMP Don Bosco III</p>
+                </a>
+            </div>
+            <div class="edu-item">
+                <a href="https://share.google/sH8dl8tatysFBVXJn" target="_blank">
+                    <img src="https://i.pinimg.com/originals/b8/ec/d6/b8ecd6e44354d63a76022678ef08a260.jpg" alt="Sacipus Logo" class="edu-img">
+                    <p class="edu-caption">SMAN 1 Cikarang Pusat</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="portofolio" class="portofolio-section">
             <h2>Portofolio</h2>
@@ -53,13 +76,10 @@
             <input type="text" id="name" name="name" placeholder="Enter your name" class="name-input">
             </div>
 
-            <div class="gender-field">
-            <label for="gender" class="gender-label">Gender:</label><br>
-            <select class="gender-field">
-            <option value="man">Man</option>
-            <option value="woman">Woman</option>
-            <option value="other">Prefer not to say</option>
-        </select>
+            <div class="umur-field">
+            <label for="umur" class="umur-label">Age:</label>
+            <input type ="number"
+            min="0" max="100" placeholder="17" class="umur-input" id="umur" name="umur">
             </div>
 
             <div class="email-field">
@@ -71,8 +91,14 @@
             <label for="message" class="message-label">Message:</label><br>
             <textarea id="message" name="message" class="message-input"></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="button" onclick="validateForm();">Send Message</button>
+
+            <div class="hasil-section"></div>
+            <textarea id="disabledField" class="hasil-message" value="..." disabled rows="6"></textarea>
             </form>
+            <br>
+
+            
         </section>
 
         
